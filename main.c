@@ -9,7 +9,7 @@
 // Switch defines
 #define REED_SWITCH 0 //pin 2.0
 
-#define _BV(val) 1<<val // Bit shift macro
+#define _BV(val) (1<<val) // Bit shift macro
 
 // Change TM1637 configuration within the TM1637.h file.
 

@@ -38,7 +38,7 @@
 #define TM1637_CLK_HIGH()       (P1OUT |= _BV(TM1637_CLK_PIN)) // Sets clock line high/low
 #define TM1637_CLK_LOW()        (P1OUT &= ~_BV(TM1637_CLK_PIN))
 
- #define _BV(val) 1<<val // Bit shift macro
+ #define _BV(val) (1<<val) // Bit shift macro
 
 static int _config = TM1637_SET_DISPLAY_ON | TM1637_BRIGHTNESS_MAX;
 static int _segments = 0xff;
